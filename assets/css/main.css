@@ -1,0 +1,129 @@
+/* Reset*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-areas: "navbar" "first" "second" "third" "fourth" "footer";
+}
+.container .navbar {
+  grid-area: navbar;
+}
+.container .first {
+  grid-area: first;
+}
+.container .second {
+  grid-area: second;
+}
+.container .third {
+  grid-area: third;
+}
+.container .fourth {
+  grid-area: fourth;
+  background-color: #462387;
+}
+.container .footer {
+  grid-area: footer;
+}
+
+.navbar {
+  height: 5vh;
+  background-color: black;
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background: #0c0910;
+    color: #ffffff;
+  }
+}
+.first {
+  height: 50vh;
+  background-color: #cccccc;
+}
+
+.second {
+  height: 50vh;
+  background-color: #a1a1a1;
+  color: white;
+}
+
+.third {
+  height: 50vh;
+  background-color: #b4b4b4;
+  color: white;
+}
+
+.fourth {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr 5fr 5fr 5fr 5fr 5fr;
+  grid-template-areas: "square1" "square2" "square3" "square4" "square5" "square6";
+}
+.fourth .square1 {
+  grid-area: square1;
+  height: 50vh;
+  background-color: #238087;
+}
+.fourth .square2 {
+  grid-area: square2;
+  height: 50vh;
+  background-color: #7fcc78;
+}
+.fourth .square3 {
+  grid-area: square3;
+  height: 50vh;
+  background-color: #2d2387;
+}
+.fourth .square4 {
+  grid-area: square4;
+  height: 50vh;
+  background-color: #858723;
+}
+.fourth .square5 {
+  grid-area: square5;
+  height: 50vh;
+  background-color: #872341;
+}
+.fourth .square6 {
+  grid-area: square6;
+  height: 50vh;
+  background-color: #874823;
+}
+
+@media (min-width: 768px) {
+  .fourth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-areas: "square1 square2" "square3 square4" "square5 square6";
+  }
+}
+.footer {
+  height: 60vh;
+  background-color: #b8b8b8;
+  color: gray;
+}
+
+.button--primary {
+  color: #060606;
+  border-radius: 2px;
+  background-color: #FFA500;
+}
+.button--primary:hover {
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

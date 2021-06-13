@@ -1,0 +1,15 @@
+
+
+.button--primary {
+  color: $sable;
+  border-radius: 2px;
+  background-color: $orange;
+  &:hover {
+    background-color: $clearwhite;
+  }
+}
+// .button--secondary {
+//   color: $bg-white;
+//   border-radius: 0;
+//   background-color: $salmon;
+// }

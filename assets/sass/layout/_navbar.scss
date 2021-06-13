@@ -1,0 +1,12 @@
+.navbar {
+  height: 5vh;
+  background-color: black;
+  color: gray;
+}
+
+@include respond-to("md") {
+  .navbar {
+    background: $darkblack;
+    color: $clearwhite;
+  }
+}

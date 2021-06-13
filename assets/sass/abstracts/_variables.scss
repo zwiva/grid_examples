@@ -1,0 +1,15 @@
+$clearwhite: #ffffff;
+$darkblack: #0c0910;
+$sable: #060606;
+$charcoal: #2E1503;
+$tangerine: #FFAF6D;
+$orange: #FFA500;
+
+$breakpoints: (
+  // xs
+  'sm': (min-width: 576px),
+  'md': (min-width: 768px),
+  'lg': (min-width: 992px),
+  'xl': (min-width: 1200px),
+  'xxl': (min-width: 1400px)
+);

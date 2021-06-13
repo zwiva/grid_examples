@@ -1,0 +1,44 @@
+.fourth {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr 5fr 5fr 5fr 5fr 5fr;
+  grid-template-areas: "square1" "square2" "square3" "square4" "square5" "square6";
+  .square1 {
+    grid-area: square1;
+    height: 50vh;
+    background-color: #238087;
+  }
+  .square2 {
+    grid-area: square2;
+    height: 50vh;
+    background-color: #7fcc78;
+  }
+  .square3 {
+    grid-area: square3;
+    height: 50vh;
+    background-color: #2d2387;
+  }
+  .square4 {
+    grid-area: square4;
+    height: 50vh;
+    background-color: #858723;
+  }
+  .square5 {
+    grid-area: square5;
+    height: 50vh;
+    background-color: #872341;
+  }
+  .square6 {
+    grid-area: square6;
+    height: 50vh;
+    background-color: #874823;
+  }
+}
+@include respond-to("md") {
+  .fourth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr 5fr 5fr;
+    grid-template-areas: "square1 square2" "square3 square4" "square5 square6";
+  }
+}

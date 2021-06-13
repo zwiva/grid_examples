@@ -1,0 +1,36 @@
+//mobile
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  // grid-template-rows: 1fr 5fr 5fr 5fr 5fr 2fr;
+  grid-template-areas: "navbar" "first" "second" "third" "fourth" "footer";
+  .navbar {
+    grid-area: navbar;
+  }
+  .first {
+    grid-area: first;
+  }
+  .second {
+    grid-area: second;
+  }
+  .third {
+    grid-area: third;
+  }
+  .fourth {
+    grid-area: fourth;
+    background-color: #462387;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+
+// @include respond-to("md") {
+//   .container {
+//     grid-template-columns: 1fr 1fr;
+//     grid-template-rows: 1fr 5fr 7fr 2fr;
+//     grid-template-areas: "navbar navbar" "main main" "articles presentation" "footer footer";
+//   }
+// }
